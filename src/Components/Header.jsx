@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../utils/Button";
 import { Link } from "react-router-dom";
 
 function Header() {
