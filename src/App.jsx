@@ -9,7 +9,7 @@ import Contact from "./Components/Contact";
 function App() {
   return (
     <Router>
-      <div className="text-2xl">
+      <div className="text-2xl overflow-hidden">
         <Header />
         <Switch>
           <Route exact path="/about" component={About} />
