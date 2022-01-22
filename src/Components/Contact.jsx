@@ -23,17 +23,36 @@ function Contact() {
       );
   };
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <input type="text" name="from_name" placeholder="Name" />
-      <input type="text" name="from_email" placeholder="Email" />
-      <textarea
-        name="message"
-        cols="30"
-        rows="10"
-        className="border-2 border-black"
-      />
-      <input type="submit" value="Send" className="border-2 border-black" />
-    </form>
+    <div className="bg-green-300 min-h-screen flex flex-col justify-center items-center ">
+      <h1 className="text-4xl">Contact Me !</h1>
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="flex flex-col justify-center items-center gap-4 mb-64"
+      >
+        <input
+          type="text"
+          name="from_name"
+          placeholder="Name"
+          className="rounded bg-white bg-opacity-90 border-2 border-black p-1 mt-6"
+        />
+        <input
+          type="email"
+          name="from_email"
+          placeholder="Email"
+          className="rounded bg-white bg-opacity-90 border-2 border-black p-1"
+        />
+        <textarea
+          name="message"
+          className="rounded bg-white bg-opacity-90 border-2 border-black h-24 w-96 p-1 text-lg"
+        />
+        <input
+          type="submit"
+          value="Send"
+          className="rounded border-2 border-black p-1 hover:scale-110 transition duration-200 hover:bg-white hover:bg-opacity-90"
+        />
+      </form>
+    </div>
   );
 }
 

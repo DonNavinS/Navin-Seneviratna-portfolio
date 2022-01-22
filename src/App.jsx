@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
@@ -10,6 +15,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <Router>
+      <Redirect to="/about" />
       <div className="text-2xl overflow-hidden">
         <Header />
         <Switch>
