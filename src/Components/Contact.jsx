@@ -23,7 +23,7 @@ function Contact() {
       );
   };
   return (
-    <div className="bg-green-300 min-h-screen flex flex-col justify-center items-center ">
+    <div className="bg-gradient-to-r from-violet-400 to-green-400 min-h-screen flex flex-col justify-center items-center ">
       <h1 className="text-4xl">Contact Me !</h1>
       <form
         ref={form}

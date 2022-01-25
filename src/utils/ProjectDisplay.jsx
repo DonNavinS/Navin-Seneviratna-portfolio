@@ -3,17 +3,22 @@ import React from "react";
 function ProjectDisplay(props) {
   return (
     <div
-      href={props.link}
-      target="_blank"
-      className={`flex flex-col items-center col-span-4 ${props.start} ${props.margin} h-full w-full transition duration 150 hover:scale-110 hover:opacity-60  `}
+      className={`bg-${props.image} border-black border-2 rounded ${props.start} ${props.margin} w-96 h-60 hover:scale-110 transition duration-300  `}
     >
-      <img
-        src={props.image}
-        alt="Generated Webpage displaying employee cards"
-        className="h-64"
-      />
-      <span>{props.title}</span>
-      <span className="text-sm">{props.text}</span>
+      <a href={props.link} target="_blank">
+        <div className="flex flex-col justify-center items-center gap-y-2 h-full w-full opacity-0 hover:opacity-70 bg-black">
+          <div className="flex justify-center gap-x-4">
+            <a href="https://google.ca" target="_blank">
+              <i className="fab fa-github fa-2x "></i>
+            </a>
+            <a href={props.link} target="_blank">
+              <i className="fas fa-desktop fa-2x"></i>
+            </a>
+          </div>
+          <span className="text-white">{props.title}</span>
+          <span className="text-white text-sm">{props.text}</span>
+        </div>
+      </a>
     </div>
   );
 }

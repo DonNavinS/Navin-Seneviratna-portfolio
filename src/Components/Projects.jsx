@@ -8,20 +8,20 @@ import JestImage from "../images/Jest-challenge.jpg";
 
 function Projects() {
   return (
-    <div className="grid grid-cols-12 gap-y-16 bg-teal-200 py-20">
+    <div className="grid grid-cols-12 gap-y-16 bg-gradient-to-b from-red-300 to-cyan-300 py-20">
       <ProjectDisplay
         title="Restaurant Rolodex"
         text="React, Express, mySQL"
         link="https://restaurant-rolodex.herokuapp.com/home"
-        image={RestRoloImage}
-        margin="translate-x-10"
+        image="RestRoloImage"
+        margin="translate-x-24"
         start="col-start-2"
       />
       <ProjectDisplay
         title="What's Happening"
         text="Javascript, Express, GoogleAPI"
         link="https://teamtoo222.github.io/Project-1-UofT/"
-        image={WhatsHappeningImage}
+        image="WhatsHappeningImage"
         margin="-translate-x-10"
         start="col-start-8"
       />
@@ -29,14 +29,14 @@ function Projects() {
         title="SmartFix"
         text="Node, Express, mySQL"
         link="https://floating-cove-91289.herokuapp.com/"
-        image={SmartFixImage}
-        margin="translate-x-10"
+        image="SmartFixImage"
+        margin="translate-x-24"
         start="col-start-2"
       />
       <ProjectDisplay
         title="Employee Profile Generator"
         text="Node, CLI Application"
-        image={JestImage}
+        image="JestImage"
         margin="-translate-x-10"
         start="col-start-8"
       />
