@@ -15,7 +15,15 @@
   background-size: 100% 100%;
 }
 
-.fa-github,
-.fa-desktop {
+.project-icon {
   color: white;
+}
+
+.resume {
+  height: 80vh;
+  width: 30vw;
+}
+
+.about-me-description {
+  width: 40vw;
 }

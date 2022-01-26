@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <Redirect to="/about" />
-      <div className="text-2xl overflow-hidden">
+      <div className="text-2xl overflow-hidden font-mono">
         <Header />
         <Switch>
           <Route exact path="/about" component={About} />

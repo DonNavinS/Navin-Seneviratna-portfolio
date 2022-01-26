@@ -8,11 +8,11 @@ function ProjectDisplay(props) {
       <a href={props.link} target="_blank">
         <div className="flex flex-col justify-center items-center gap-y-2 h-full w-full opacity-0 hover:opacity-70 bg-black">
           <div className="flex justify-center gap-x-4">
-            <a href="https://google.ca" target="_blank">
-              <i className="fab fa-github fa-2x "></i>
+            <a href={props.github} target="_blank">
+              <i className="fab fa-github fa-2x project-icon"></i>
             </a>
             <a href={props.link} target="_blank">
-              <i className="fas fa-desktop fa-2x"></i>
+              <i className="fas fa-desktop fa-2x project-icon"></i>
             </a>
           </div>
           <span className="text-white">{props.title}</span>

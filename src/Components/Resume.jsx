@@ -3,11 +3,12 @@ import ResumeScreenshot from "../images/Resume.jpg";
 
 function Resume() {
   return (
-    <div className="bg-yellow-300 h-screen bg-opacity-80 flex flex-col items-center">
+    <div className=" bg-gradient-to-tr from-fuchsia-400 to bg-green-400 p-8 h-screen bg-opacity-80 flex flex-col items-center">
+      <h1 className="text-5xl">Resume</h1>
       <img
         src={ResumeScreenshot}
         alt="Navin Seneviratna Resume"
-        className="h-5/6 w-1/3 mt-10"
+        className="resume m-2"
       />
 
       <a

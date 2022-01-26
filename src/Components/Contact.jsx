@@ -23,8 +23,8 @@ function Contact() {
       );
   };
   return (
-    <div className="bg-gradient-to-r from-violet-400 to-green-400 min-h-screen flex flex-col justify-center items-center ">
-      <h1 className="text-4xl">Contact Me !</h1>
+    <div className="bg-gradient-to-r from-violet-400 to-green-400 h-auto pt-12 flex flex-col justify-center items-center ">
+      <h1 className="text-5xl">Contact Me !</h1>
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -44,6 +44,7 @@ function Contact() {
         />
         <textarea
           name="message"
+          placeholder="Message"
           className="rounded bg-white bg-opacity-90 border-2 border-black h-24 w-96 p-1 text-lg"
         />
         <input
