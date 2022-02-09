@@ -19,7 +19,7 @@ function Projects() {
         <ProjectDisplay
           title="IMDb Actor Game"
           text="IMDb API, React, Tailwind"
-          link="https://donnavins.github.io/home"
+          link="https://donnavins.github.io/imdb-actor-game/"
           github="https://github.com/DonNavinS/imdb-actor-game"
           image="IMDbGameImage"
           margin="-translate-x-10"
@@ -37,10 +37,28 @@ function Projects() {
 
         <ProjectDisplay
           title="Employee Profile Generator"
-          text="Node, CLI Application"
+          text="JavaScript, HTML, Node CLI Application"
           link="https://github.com/DonNavinS/jest-challenge"
           github="https://github.com/DonNavinS/jest-challenge"
           image="JestImage"
+          margin="-translate-x-10"
+          start="col-start-8"
+        />
+        <ProjectDisplay
+          title="Team Profile Generator"
+          text="Javascript, Node, Express, mySQL"
+          link="https://floating-cove-91289.herokuapp.com/"
+          github="https://github.com/groupsixzerotwo/smart-fix"
+          image="SmartFix"
+          margin="translate-x-24"
+          start="col-start-2"
+        />
+        <ProjectDisplay
+          title="Manager CLI Application"
+          text="Javascript, Node, CLI Application"
+          link="https://github.com/DonNavinS/mySQL-weekly-challenge"
+          github="https://github.com/DonNavinS/mySQL-weekly-challenge"
+          image="ManagerCLI"
           margin="-translate-x-10"
           start="col-start-8"
         />

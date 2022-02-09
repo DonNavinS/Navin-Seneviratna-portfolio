@@ -14,7 +14,7 @@ function Resume() {
       <a
         href="https://docs.google.com/document/d/1qQnKdy296shqyjlnhHByQQ1G_MXXVm8D7ErG6WhUGiY/edit?usp=sharing"
         target="_blank"
-        className="text-base"
+        className="font-semibold text-xl"
       >
         Click here for a better look!
       </a>

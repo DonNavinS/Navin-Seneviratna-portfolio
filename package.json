@@ -1,7 +1,6 @@
 {
   "name": "vite-project",
   "version": "0.0.0",
-  "homepage": "https://navin-seneviratna-portfolio.herokuapp.com/",
   "scripts": {
     "start": "vite",
     "build": "vite build",

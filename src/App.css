@@ -15,6 +15,16 @@
   background-size: 100% 100%;
 }
 
+.bg-SmartFix {
+  background-image: url(./images/SmartFix.jpg);
+  background-size: 100% 100%;
+}
+
+.bg-ManagerCLI {
+  background-image: url(./images/ManagerCLI.jpg);
+  background-size: 100% 100%;
+}
+
 .project-icon {
   color: white;
 }
