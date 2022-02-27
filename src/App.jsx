@@ -1,32 +1,39 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+import { useState } from "react";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
+import "font-awesome/css/font-awesome.min.css";
+import { hamburger, xButton } from "./utils/icons";
 
 function App() {
+  const [showNav, setShowNav] = useState(false);
+  let width = showNav && "80%";
   return (
-    <Router>
-      <Redirect to="/about" />
-      <div className="text-2xl overflow-hidden font-mono">
-        <Header />
-        <Switch>
-          <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/resume" component={Resume} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
+    <div className={`font-mono bg-gradient-to-b from-slate-200 to-slate-400 `}>
+      <button
+        className="fixed right-10 top-8 z-10 p-3 rounded hover:bg-slate-300 transition duration-100"
+        onClick={() => setShowNav(!showNav)}
+      >
+        {showNav ? xButton : hamburger}
+      </button>
+      <Header showNav={showNav} />
+      <div style={{ width: width }}>
+        <About />
+        <Projects />
+        <Resume />
+        <Contact />
         <Footer />
       </div>
-    </Router>
+      {document.body.scrollTop > 20 && (
+        <a className="fixed bottom-10 right-10 z-20" href="#about">
+          Back to Top
+        </a>
+      )}
+    </div>
   );
 }
 

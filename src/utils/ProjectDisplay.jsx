@@ -3,7 +3,7 @@ import React from "react";
 function ProjectDisplay(props) {
   return (
     <div
-      className={`bg-${props.image} border-black border-2 rounded ${props.start} ${props.margin} w-96 h-60 hover:scale-110 transition duration-300  `}
+      className={`bg-${props.image} border-black border-2 rounded w-96 h-60 hover:scale-110 transition duration-300`}
     >
       <a href={props.link} target="_blank">
         <div className="flex flex-col justify-center items-center gap-y-2 h-full w-full opacity-0 hover:opacity-70 bg-black">

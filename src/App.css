@@ -1,3 +1,59 @@
+* {
+  scroll-behavior: smooth;
+}
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translate3d(20vw, 0, 0);
+    transform: translate3d(20vw, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translate3d(20vw, 0, 0);
+    transform: translate3d(20vw, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slide-nav-right {
+  -webkit-animation: slide-nav-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-nav-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-nav-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+@keyframes slide-nav-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
 .bg-RestRoloImage {
   background-image: url(./images/Rest-Rolo.jpg);
   background-size: 100% 100%;
@@ -25,6 +81,11 @@
   background-size: 100% 100%;
 }
 
+.bg-BudgetTracker {
+  background-image: url(./images/Budget-Tracker.jpg);
+  background-size: 100% 100%;
+}
+
 .project-icon {
   color: white;
 }
@@ -32,8 +93,4 @@
 .resume {
   height: 80vh;
   width: 30vw;
-}
-
-.about-me-description {
-  width: 40vw;
 }

@@ -1,23 +1,44 @@
 import React from "react";
-import Button from "../utils/Button";
-import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ showNav }) {
   return (
-    <nav className="">
-      <div className="flex justify-center gap-x-8 py-8 bg-red-400">
-        <Link to="/about">
-          <Button text="About Me" />
-        </Link>
-        <Link to="/projects">
-          <Button text="Projects" />
-        </Link>
-        <Link to="/resume">
-          <Button text="Resume" />
-        </Link>
-        <Link to="/contact">
-          <Button text="Contact" />
-        </Link>
+    <nav
+      className={`flex bg-gray-400 h-screen items-center fixed right-0 ${
+        showNav ? "slide-left" : "slide-nav-right"
+      }`}
+      style={{ width: "20%" }}
+    >
+      <div className="flex flex-col w-full" style={{ height: "70%" }}>
+        <a
+          className="hover:bg-yellow-400 transition duration-100 p-3"
+          href="#about"
+        >
+          <span>About</span>
+        </a>
+        <a
+          className="hover:bg-yellow-400 transition duration-100 p-3"
+          href="#projects"
+        >
+          <span>Projects</span>
+        </a>
+        <a
+          className="hover:bg-yellow-400 transition duration-100 p-3"
+          href="#skills"
+        >
+          <span>Skills</span>
+        </a>
+        <a
+          className="hover:bg-yellow-400 transition duration-100 p-3"
+          href="#resume"
+        >
+          <span>Resume</span>
+        </a>
+        <a
+          className="hover:bg-yellow-400 transition duration-100 p-3"
+          href="#contact"
+        >
+          <span>Contact</span>
+        </a>
       </div>
     </nav>
   );

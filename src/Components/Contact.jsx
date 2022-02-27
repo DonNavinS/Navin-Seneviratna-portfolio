@@ -23,7 +23,10 @@ function Contact() {
       );
   };
   return (
-    <div className="bg-gradient-to-r from-violet-400 to-green-400 h-auto pt-12 flex flex-col justify-center items-center ">
+    <div
+      id="contact"
+      className=" h-screen flex flex-col justify-center items-center "
+    >
       <h1 className="text-5xl">Contact Me !</h1>
       <form
         ref={form}
