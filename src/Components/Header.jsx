@@ -21,12 +21,7 @@ function Header({ showNav }) {
         >
           <span>Projects</span>
         </a>
-        <a
-          className="hover:bg-yellow-400 transition duration-100 p-3"
-          href="#skills"
-        >
-          <span>Skills</span>
-        </a>
+
         <a
           className="hover:bg-yellow-400 transition duration-100 p-3"
           href="#resume"

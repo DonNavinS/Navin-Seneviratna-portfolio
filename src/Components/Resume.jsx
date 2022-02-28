@@ -7,7 +7,7 @@ function Resume() {
       id="resume"
       className="h-screen bg-opacity-80 flex flex-col items-center"
     >
-      <h1 className="text-5xl">Resume</h1>
+      <h1 className="text-5xl title-font text-red-700 underline ">Resume</h1>
       <img
         src={ResumeScreenshot}
         alt="Navin Seneviratna Resume"

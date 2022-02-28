@@ -27,7 +27,9 @@ function Contact() {
       id="contact"
       className=" h-screen flex flex-col justify-center items-center "
     >
-      <h1 className="text-5xl">Contact Me !</h1>
+      <h1 className="text-5xl title-font text-red-700 underline">
+        Contact Me!
+      </h1>
       <form
         ref={form}
         onSubmit={sendEmail}

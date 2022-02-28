@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Rubik&display=swap");
+
+.title-font {
+  /* font-family: "Rubik", sans-serif; */
+  font-family: "Anton", sans-serif;
+  /* font-family: 'League Gothic', sans-serif; */
+}
+
 * {
   scroll-behavior: smooth;
 }
+
 .slide-left {
   -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

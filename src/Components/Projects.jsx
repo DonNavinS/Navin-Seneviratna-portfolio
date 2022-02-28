@@ -4,7 +4,7 @@ import ProjectDisplay from "../utils/ProjectDisplay";
 function Projects() {
   return (
     <div id="projects" className="py-20">
-      <h1 className="text-5xl font-semibold text-red-700 underline text-center pb-4">
+      <h1 className="text-5xl title-font text-red-700 underline text-center pb-4">
         Projects
       </h1>
       <div className="flex justify-center">

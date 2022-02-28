@@ -31,10 +31,12 @@ function About({ showNav }) {
         className=" flex flex-col items-center justify-center gap-y-5"
         style={{ width: "60%" }}
       >
-        <h1 className="text-7xl text-red-700 font-bold text-center">
+        <h1 className="text-7xl text-red-700 text-center title-font">
           Navin Seneviratna
         </h1>
-        <h2>SeneviratnaNavin@gmail.com | (647)-975-9397</h2>
+        <h2>
+          <a href="#contact">SeneviratnaNavin@gmail.com </a> | (647)-975-9397
+        </h2>
         <span
           style={{ width: "80%" }}
           className="text-lg about-me-description text-center"
@@ -42,7 +44,7 @@ function About({ showNav }) {
           Full-Stack developer with a passion for learning and developing my
           skills. Graduated from University of Toronto's SCS Coding Bootcamp,
           where I familiarized myself with HTML, CSS, JavaScript, and various
-          front-end and back-end technologies
+          front-end and back-end technologies.
         </span>
         <div className="flex gap-x-3">
           <div>{htmlLogo}</div>
