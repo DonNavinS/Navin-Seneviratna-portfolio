@@ -21,7 +21,7 @@ function App() {
         {showNav ? xButton : hamburger}
       </button>
       <Header showNav={showNav} />
-      <div className="body flex flex-col gap-y-10" style={{ width: width }}>
+      <div className="body flex flex-col" style={{ width: width }}>
         <About />
         <Projects />
         <Resume />

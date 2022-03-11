@@ -3,11 +3,11 @@ import ProjectDisplay from "../utils/ProjectDisplay";
 
 function Projects() {
   return (
-    <div id="projects" className="py-20">
+    <div id="projects" className="h-screen">
       <h1 className="text-5xl title-font text-red-700 underline text-center pb-4">
         Projects
       </h1>
-      <div className="flex justify-center">
+      <div className="flex flex-wrap justify-center">
         <section className="flex flex-wrap justify-evenly gap-y-10">
           <ProjectDisplay
             title="Restaurant Rolodex"
@@ -50,13 +50,6 @@ function Projects() {
             link="https://floating-cove-91289.herokuapp.com/"
             github="https://github.com/groupsixzerotwo/smart-fix"
             image="SmartFix"
-          />
-          <ProjectDisplay
-            title="Manager CLI Application"
-            text="Javascript, Node, CLI Application"
-            link="https://github.com/DonNavinS/mySQL-weekly-challenge"
-            github="https://github.com/DonNavinS/mySQL-weekly-challenge"
-            image="ManagerCLI"
           />
         </section>
       </div>
