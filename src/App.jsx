@@ -15,24 +15,19 @@ function App() {
   return (
     <div className={`font-mono bg-gradient-to-b from-slate-200 to-slate-400 `}>
       <button
-        className="fixed right-10 top-8 z-10 p-3 rounded hover:bg-slate-300 transition duration-100"
+        className="fixed right-10 top-8 z-10 p-3 rounded hover:bg-red-500 transition duration-100"
         onClick={() => setShowNav(!showNav)}
       >
         {showNav ? xButton : hamburger}
       </button>
       <Header showNav={showNav} />
-      <div style={{ width: width }}>
+      <div className="body flex flex-col gap-y-10" style={{ width: width }}>
         <About />
         <Projects />
         <Resume />
         <Contact />
         <Footer />
       </div>
-      {document.body.scrollTop > 20 && (
-        <a className="fixed bottom-10 right-10 z-20" href="#about">
-          Back to Top
-        </a>
-      )}
     </div>
   );
 }
